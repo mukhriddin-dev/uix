@@ -1,0 +1,215 @@
+*{margin: 0;
+padding: 0;
+ }
+
+ .bfilter{
+     background-image: url(./img2.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
+
+ .card{
+     width: 980px;
+     height: 550px;
+     background-image: url(./img3.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     margin: 5% auto;
+     border: 3px;
+     filter: grayscale(10%);
+     box-shadow: inset 0px 0px 1px black, 10px 10px 50px black;
+     overflow: hidden;
+ }
+
+ .card .card-menu-r{
+     position: absolute;
+     right: 0px;
+     width: 100px;
+     height: 100%;
+     background: rgb(0,0,0,0.2);
+     box-sizing: border-box;
+     display: flex;
+     align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background: rgba( 0, 0, 0, 0.40 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.0px );
+    -webkit-backdrop-filter: blur( 4.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+ }
+
+
+ .card .card-menu-r .ul-m{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center; 
+       
+ }
+
+
+ .card .card-menu-r .ul-m .li-m{
+     font-size: 25px;
+     color: white;
+     list-style-type: none;
+     margin-top: 80px;
+     box-sizing: border-box;
+ }
+
+ .card .card-menu-r .ul-m .li-m:nth-child(4){
+     display: flex;
+     flex-direction: column;
+ }
+
+
+ .card .card-menu-r .ul-m .li-m:nth-child(1){
+   position: relative;
+   top:-65px;
+   
+}
+
+
+.card .card-menu-r .ul-m .li-m:nth-child(1):hover{
+    animation: icon forwards  ease 0.6s;
+   
+ }
+ .card .card-menu-r .ul-m .li-m:nth-child(2):hover{
+    animation: icon forwards  ease 0.6s;
+   
+ }
+
+ .card .card-menu-r .ul-m .li-m:nth-child(3):hover{
+    animation: icon forwards  ease 0.6s;
+   
+ }
+
+.card .card-menu-r .ul-m .li-m:nth-child(2){
+    position: relative;
+    top:-65px;
+    animation: icon all ease 0.6s;
+
+ }
+
+ .card .card-menu-r .ul-m .li-m:nth-child(3){
+    position: relative;
+    top:-65px;
+    animation: icon all ease 0.6s;
+ }
+
+ .fab{
+     margin-top: 15px;
+     font-size:21px;
+     transition: all ease-in 0.4s;
+     box-sizing: border-box;
+ }
+
+ .fab:hover{
+    transform: rotate(360deg);
+ }
+
+
+ @keyframes icon {
+
+
+    from{
+        transform: scale(1);
+    }
+
+    to{
+        transform: scale(1.4);
+    }
+
+
+ }
+
+
+
+
+ .card .box{
+     width: 400px;
+     height: 400px;
+     background:rgb(0,0,0,0.5);
+     position: absolute;
+     display: inline-block;
+      clip-path: circle( 76% at 76% 0%); 
+     transform: rotate(291deg);
+     transition: all 0.3s ease-out;
+     overflow: hidden;
+     top:-50px;
+     left: -45px;
+     display: none;
+ }
+
+ .card .box:hover{
+    background:rgba(69, 255, 116, 0.3);
+ }
+.card .box2{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background-color: rgba(0, 255, 255, 0.294);
+    clip-path: circle(69.2% at 0 90%);
+    z-index: 3;
+    filter:brightness(90%);
+    background: rgba( 80, 227, 194, 0.40 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 2.0px );
+-webkit-backdrop-filter: blur( 2.0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition:  all 0.6s;
+} 
+
+.card .box2:hover{
+    filter:brightness(100%);
+}
+
+
+
+.card .box2 .txt{
+    font-family: sans-serif;
+    position: absolute;
+    top:45%;
+    left:35px;
+    color: aliceblue;
+}
+
+.card .box2 .txt1{
+    font-family: sans-serif;
+    position: absolute;
+    top:55%;
+    left:35px;
+    width: 320px;
+    color: aliceblue;
+    font-weight: 500;
+    text-shadow: 1px  1px 10px black;
+}
+
+.box3{
+    
+    width: 400px;
+    height: 273px;
+    background-image: url(./img1.jpg);
+    background-size: cover;
+    position: absolute;
+    left: 40%;
+    top:10%;
+    border-top: 10px solid rgba(0, 255, 255, 0.863);
+    border-bottom: 10px solid rgb(255, 255, 255, 0.8);
+    border-radius: 66px 0 66px 0;
+    z-index: 4;
+    filter:brightness(90%);
+    transition: 0.3s ease-in all;
+}
+
+.box3:hover{
+    filter:brightness(100%);
+}
+
+
+
+
+ 
